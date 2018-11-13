@@ -1,12 +1,19 @@
+import './index.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {CursoCard} from './cursos/cursoCard';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  <div className="listaCurso">
+    <CursoCard thumb="assets/img/javascript.jpg"
+               dataCurso="30 Nov"
+               categoria="Desenvolvimento" />
+    <CursoCard thumb="assets/img/typescript.jpg"
+               dataCurso="20 Dez"
+               nome="TypeScript"
+               categoria="Desenvolvimento" />
+  </div>,
+  document.getElementById('root')
+);

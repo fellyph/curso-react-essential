@@ -1,0 +1,158 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* common */
+
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.btn {
+  background: rgb(232, 181, 41);
+  color: white;
+  padding: 0.5em;
+  border: 2px solid rgb(232, 181, 41);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn {
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.btn--like::before {
+  content: '';
+  background-image: url('/assets/img/heart.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px
+}
+
+.btn--like:hover {
+  background: white;
+  color:  rgb(232, 181, 41);
+}
+
+.btn--like:focus {
+  outline: 2px solid #DF2E2D;
+}
+
+/* header */
+.topbar {
+  text-align: center;
+  background: #F9C948;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.topbar__title {
+  color: white;
+  margin: 0.5em 0;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.topbar__filter {
+  background: #fff;
+  border: none;
+  padding: 0.5em;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #F9C948;
+}
+
+.topbar__filter--current {
+  background: rgba(223, 45, 45, 0.7);
+  color: white;
+}
+  
+.logo {
+  margin: 1em 0;
+  display: inline-block;
+}
+
+/* course */
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+
+.course {
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+  
+.course .card {
+  box-shadow: 2px 2px 10px #DDDDDD;
+}
+
+.card .card-block {
+  padding: 0.8em;
+  position: relative;
+}
+
+.card-date {
+  background: white;
+  border-radius: 100%;
+  box-shadow: 2px 2px 10px #DDDDDD;
+  color: #DF2E2D;
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 1em;
+  position: absolute;
+  transform: translateY(-50%);
+  right: 1em;
+  top:0;
+}
+
+.card-title {
+  font-size: 1.7em;
+  margin: 0;
+}
+
+/* footer */ 
+.footerbar {
+  background: #F9C948;
+  color: white;
+  padding: 1em;
+  box-sizing: border-box;
+  text-align: center
+}
+
+.card .responsive-img {
+  height: auto;
+  max-width: 100%;
+}
+
+/*Medium devices (tablets, less than 992px) */
+@media (min-width: 576px) {
+  .course {
+    width: calc(50% - 20px);
+  }
+}
+
+/*Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) {
+  .course {
+    width: calc(33% - 20px);
+  }
+}
