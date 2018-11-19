@@ -8,4 +8,7 @@ body {
 .listaCurso {
   padding: 1em;
   margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
