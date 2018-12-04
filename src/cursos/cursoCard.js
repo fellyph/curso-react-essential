@@ -1,6 +1,6 @@
 import React from 'react';
 import FavoritarBtn from '../shared/favoritarBtn';
-import estilo from './cursoCard.module.css';
+import estilo from './CursoCard.module.css';
 
 export class CursoCard extends React.Component {
   listaRequistos = this.props.requisitos.map((tag, index) => <li key={index}>{tag}</li>);

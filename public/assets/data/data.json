@@ -1,0 +1,20 @@
+{
+  "cursos" : [
+    {
+      "nome": "TypeScript",
+      "thumb": "assets/img/typescript.jpg",
+      "categoria": "desenvolvimento",
+      "dia": "10 Fev",
+      "vagas": 10,
+      "requisito": ["lógica de programacao","html"]
+    },
+    {
+      "nome": "JavaScript",
+      "thumb": "assets/img/javascript.jpg",
+      "categoria": "desenvolvimento",
+      "dia": "20 Jan",
+      "vagas": 10,
+      "requisito": ["lógica de programacao","html"]
+    }
+  ]
+}
